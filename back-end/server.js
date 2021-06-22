@@ -30,7 +30,7 @@ app.post('/cart', (req, res) => {
       };
       let cartProductExists = false;
       cartProducts.map((cartProduct) => {
-        if (cartProduct.id === newCartProduct.id) {
+      if (cartProduct.id === newCartProduct.id) {
           cartProduct.quantity++;
           cartProductExists = true;
         }
